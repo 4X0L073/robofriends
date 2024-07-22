@@ -1,10 +1,12 @@
 {
   "name": "sample-react-app",
   "version": "0.1.0",
+  "homepage": "https://github.com/4X0L073/robofriends",
   "private": true,
   "dependencies": {
     "@testing-library/react": "16.0.0",
     "@testing-library/user-event": "14.5.2",
+    "gh-pages": "^6.1.1",
     "nth-check": "^2.0.1",
     "postcss": "^8.4.31",
     "react": "18.3.1",
@@ -17,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
